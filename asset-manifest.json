@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/serkanberk/static/css/main.207a2555.css",
+    "main.js": "/serkanberk/static/js/main.ad2f6a64.js",
+    "static/media/me-new.png": "/serkanberk/static/media/me-new.068d73b6e77b881b7f52.png",
+    "static/media/cv.pdf": "/serkanberk/static/media/cv.4bd00da6afb85f28c371.pdf",
+    "static/media/me-about.jpeg": "/serkanberk/static/media/me-about.9958871c36f8c5e33deb.jpeg",
+    "index.html": "/serkanberk/index.html",
+    "main.207a2555.css.map": "/serkanberk/static/css/main.207a2555.css.map",
+    "main.ad2f6a64.js.map": "/serkanberk/static/js/main.ad2f6a64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.207a2555.css",
+    "static/js/main.ad2f6a64.js"
+  ]
+}
