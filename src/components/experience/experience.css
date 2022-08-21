@@ -1,0 +1,28 @@
+.htag {
+    margin-left: 3rem;
+}
+
+.roles {
+    margin-left: 3rem;
+    font-style: oblique;
+}
+
+.f_icon{
+    margin-right: 0.75rem;
+    color: var(--color-primary);
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date_info {
+    margin-right: 5rem;
+    padding-right: 5rem;
+}
+
+.broad {
+    margin-left: 5rem;
+}
