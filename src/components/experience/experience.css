@@ -1,28 +1,206 @@
-.htag {
-    margin-left: 3rem;
+.experience_container {
+  max-width: 1000px;
 }
 
-.roles {
-    margin-left: 3rem;
-    font-style: oblique;
+.timeline {
+  position: relative;
+  padding: 2rem 0;
 }
 
-.f_icon{
-    margin-right: 0.75rem;
-    color: var(--color-primary);
+/* Center line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--color-primary) 10%,
+    var(--color-primary) 90%,
+    transparent 100%
+  );
 }
 
-.dates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.timeline_item {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem;
 }
 
-.date_info {
-    margin-right: 5rem;
-    padding-right: 5rem;
+.timeline_item.left {
+  left: 0;
+  padding-right: 3rem;
 }
 
-.broad {
-    margin-left: 5rem;
+.timeline_item.right {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+/* Timeline marker */
+.timeline_marker {
+  position: absolute;
+  top: 2rem;
+  width: 40px;
+  height: 40px;
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.timeline_item.left .timeline_marker {
+  right: -20px;
+}
+
+.timeline_item.right .timeline_marker {
+  left: -20px;
+}
+
+.timeline_item:hover .timeline_marker {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  box-shadow: var(--glow-primary);
+}
+
+/* Content card */
+.timeline_content {
+  transition: var(--transition);
+}
+
+.timeline_content:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+
+.exp_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.exp_company {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+}
+
+.exp_type {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--color-secondary-dim);
+  color: var(--color-secondary);
+  border-radius: 4px;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;
+}
+
+.exp_role {
+  font-size: 1rem;
+  color: var(--color-white);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.exp_period {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.exp_description {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.exp_description li {
+  color: var(--color-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.exp_description li::before {
+  content: '→';
+  position: absolute;
+  left: -1rem;
+  color: var(--color-primary);
+}
+
+.exp_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline_item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .timeline_item.left,
+  .timeline_item.right {
+    left: 0;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .timeline_item.left .timeline_marker,
+  .timeline_item.right .timeline_marker {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline_item {
+    padding-left: 50px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline_marker {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+
+  .exp_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .exp_company {
+    font-size: 1.1rem;
+  }
+
+  .exp_role {
+    font-size: 0.9rem;
+  }
+
+  .exp_description li {
+    font-size: 0.85rem;
+  }
 }

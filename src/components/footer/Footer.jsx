@@ -1,27 +1,44 @@
 import React from 'react'
 import './footer.css'
-import {FaLinkedinIn} from 'react-icons/fa'
-import {BsGithub} from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsMedium } from 'react-icons/bs'
+
 const Footer = () => {
   return (
     <footer>
-      <a href="/#" className='footer_logo'>SERKAN BERK</a>
-      {/* <img src="../../assets/Berk-unscreen.gif" alt="Not Found"/> */}
-      <ul className='permalinks'>
-        <li><a href="/#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div className="container footer_container">
+        <a href="#home" className='footer_logo'>
+          <span className="text-primary">&lt;</span>
+          Serkan Berk
+          <span className="text-primary"> /&gt;</span>
+        </a>
+        
+        <nav className='footer_nav'>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
+        <div className='footer_socials'>
+          <a href="https://github.com/sbilgic19" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <BsGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/serkanberkb" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <BsLinkedin />
+          </a>
+          <a href="https://medium.com/@sbilgic19" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+            <BsMedium />
+          </a>
+        </div>
 
-      <div className='footer_socials'>
-        <a href="https://github.com/sbilgic19" target="_blank"><BsGithub/></a>
-        <a href="https://www.linkedin.com/in/serkanberkb" target="_blank"><FaLinkedinIn/></a>
-      </div>
-
-      <div className="footer_copyright">
-        <small>&copy; Serkan Berk Bilgiç 2022. All rights reserved</small>
+        <div className="footer_copyright">
+          <small>
+            <span className="mono text-muted">{'// '}</span>
+            © {new Date().getFullYear()} Serkan Berk Bilgiç. All rights reserved.
+          </small>
+        </div>
       </div>
     </footer>
   )

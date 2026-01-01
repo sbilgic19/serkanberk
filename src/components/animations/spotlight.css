@@ -1,0 +1,25 @@
+.spotlight-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight-effect {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.spotlight-glow {
+  pointer-events: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0, 255, 159, 0.15) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
