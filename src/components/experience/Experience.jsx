@@ -15,7 +15,7 @@ const experiences = [
       'Designed secure REST APIs with OAuth2/JWT auth, role-based access control, and strict tenant data isolation for safe multi-tenant access in prod',
       'Built Echo (get-echo.ai): AI agent workflows on an Agent SDK with custom tools, TypeScript orchestration, and prompt-layer guardrails',
       'Developed tenant knowledge retrieval with vector embeddings and RAG pipelines, improving answer quality via tighter context assembly and tool routing',
-      'Implemented tenant data ingestion with Inngest (async jobs, retries, idempotency) on Neon/Postgres + Redis — shipped for enterprise customers incl. IKEA, LC Waikiki, Les Benjamins, Hipicon',
+      'Worked forward-deployed with enterprise customers (IKEA, LC Waikiki, Les Benjamins, Hipicon), implementing tenant data ingestion with Inngest (async jobs, retries, idempotency) on Neon/Postgres + Redis',
       'Built text-to-SQL and text-to-Mongo agents for natural-language data Q&A; migrated the AI Data Analyst backend from GCP to Railway and integrated Stripe for self-serve billing',
     ],
     tags: ['Next.js', 'Python', 'Agent SDK', 'RAG', 'Inngest', 'Neon', 'Stripe'],

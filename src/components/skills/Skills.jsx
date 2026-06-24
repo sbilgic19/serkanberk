@@ -54,8 +54,14 @@ const skillCategories = [
       { name: 'LangGraph', icon: null },
       { name: 'AI SDK', icon: null },
       { name: 'OpenAI', icon: null },
+      { name: 'RAG', icon: null },
+      { name: 'Vector Embeddings', icon: null },
+      { name: 'Multi-agent Systems', icon: null },
+      { name: 'Prompt Engineering', icon: null },
+      { name: 'MCP', icon: null },
       { name: 'Langfuse', icon: null },
       { name: 'Claude Code', icon: null },
+      { name: 'Codex', icon: null },
     ]
   },
   {
@@ -64,6 +70,12 @@ const skillCategories = [
     skills: [
       { name: 'Stripe', icon: SiStripe },
       { name: 'Slack APIs', icon: FaSlack },
+      { name: 'WhatsApp', icon: null },
+      { name: 'Voice (LiveKit)', icon: null },
+      { name: 'Email APIs', icon: null },
+      { name: 'OAuth', icon: null },
+      { name: 'Google APIs', icon: null },
+      { name: 'CRM/ERP Connectors', icon: null },
       { name: 'Webhooks', icon: null },
     ]
   },

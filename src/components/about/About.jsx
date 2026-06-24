@@ -70,7 +70,8 @@ const About = () => {
               <p>
                 I specialize in building AI-powered applications, from text-to-SQL agents
                 to e-commerce chatbots. Currently working at <span className="highlight">Datapad</span>,
-                where I own full-stack development and AI services.
+                where I own full-stack development and AI services — often working
+                <span className="highlight"> forward-deployed</span> with enterprise customers.
               </p>
               <p>
                 On the side, I design, build and ship my own iOS apps end-to-end —
