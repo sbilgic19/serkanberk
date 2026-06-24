@@ -76,6 +76,8 @@
   .floating-nav a {
     padding: 0.4rem 0.6rem;
     font-size: 0.95rem;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .floating-nav .nav-label {

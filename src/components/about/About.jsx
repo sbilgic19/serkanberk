@@ -47,7 +47,7 @@ const About = () => {
               <article className='about_card'>
                 <FaRocket className='about_icon'/>
                 <h5>Projects</h5>
-                <small>5+ Completed</small>
+                <small>7+ Shipped</small>
               </article>
             </ScrollReveal>
             
@@ -68,9 +68,14 @@ const About = () => {
                 <span className="highlight"> Python/FastAPI</span>, and modern React frameworks.
               </p>
               <p>
-                I specialize in building AI-powered applications, from text-to-SQL agents 
-                to e-commerce chatbots. Currently working at <span className="highlight">Datapad</span>, 
+                I specialize in building AI-powered applications, from text-to-SQL agents
+                to e-commerce chatbots. Currently working at <span className="highlight">Datapad</span>,
                 where I own full-stack development and AI services.
+              </p>
+              <p>
+                On the side, I design, build and ship my own iOS apps end-to-end —
+                <span className="highlight"> HairTry</span> and <span className="highlight">Calquate</span> are
+                both live on the App Store.
               </p>
               <p className="about_traits">
                 <span className="trait">{'// Curious'}</span>

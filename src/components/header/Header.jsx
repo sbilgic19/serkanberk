@@ -105,20 +105,22 @@ const Header = () => {
             <div className="header_terminal" ref={terminalRef}>
               <span className="terminal_prompt">$</span>
               <span className="terminal_command"> whoami</span>
+              <span className="terminal_comment">{'// 20x engineer — builder'}</span>
             </div>
-            
+
             <h5 className="header_greeting" ref={greetingRef}>Hello, I'm</h5>
-            
+
             <h1 className="header_name" ref={nameRef}>
               <span className="text-primary">Serkan</span> Berk Bilgiç
             </h1>
-            
+
             <div className="header_title" ref={titleRef}>
-              <TypeWriter text="Full-Stack Developer & AI Engineer" />
+              <TypeWriter text="AI Engineer · Full-Stack Builder" />
             </div>
-            
+
             <p className="header_description" ref={descRef}>
-              Building web & mobile products with modern tech stacks.
+              I design, build & ship AI products end-to-end — from text-to-SQL
+              agents in production to solo apps live on the App Store.
               <br />
               <span className="text-muted">Currently @ Datapad</span>
             </p>

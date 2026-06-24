@@ -13,7 +13,7 @@ const educationData = [
     gpa: '3.8 / 4.0',
     highlights: [
       'Full Scholarship recipient',
-      'iOS Development coursework (Swift)',
+      'GLLS Track program (sustainability)',
       'Undergraduate Research Assistant - Intelligent User Interfaces',
     ],
     icon: FaGraduationCap,

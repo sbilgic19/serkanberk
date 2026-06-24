@@ -13,7 +13,7 @@ const leadershipData = [
   },
   {
     organization: 'LEAD21',
-    role: 'Fellow',
+    role: 'Alumni',
     period: 'Dec 2022 – Jan 2024',
     description: 'Yenibirlider Derneği fellowship program for emerging leaders in Turkey.',
     icon: FaAward,

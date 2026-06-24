@@ -5,9 +5,57 @@ import { ScrollReveal } from '../animations'
 
 const projects = [
   {
+    title: 'HairTry',
+    subtitle: 'AI Hair Visualizer · iOS App',
+    role: 'Solo · Self-shipped',
+    description: 'AI hair try-on app — upload a selfie, pick a style, and get a photorealistic image of yourself with the new hair. Built and shipped solo, end-to-end: app, backend, billing, and App Store launch.',
+    features: [
+      'Dual AI image pipeline (Gemini + GPT Image) with provider fallback',
+      'Two-stage serverless backend: Firestore trigger → Pub/Sub worker',
+      '11 languages with RTL support; subscriptions via RevenueCat',
+    ],
+    tech: ['React Native', 'Expo', 'TypeScript', 'Firebase', 'Cloud Functions', 'Gemini', 'GPT Image', 'RevenueCat'],
+    links: {
+      appStore: 'https://apps.apple.com/us/app/hairtry-ai-hair-visualizer/id6760612687',
+    },
+    featured: true,
+  },
+  {
+    title: 'Calquate',
+    subtitle: 'AI Calorie Counter · iOS App',
+    role: 'Solo · Self-shipped',
+    description: 'AI-powered calorie & meal tracker — snap a photo of a meal and get an instant nutrition breakdown. Designed, built, and shipped solo to the App Store.',
+    features: [
+      'AI food-photo analysis for instant calories & macros',
+      'Anonymous auth + Firestore sync — zero signup friction',
+      'Manual meal logging with daily nutrition goals',
+    ],
+    tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'OpenAI', 'RevenueCat'],
+    links: {
+      appStore: 'https://apps.apple.com/us/app/calquate-ai-calorie-counter/id6779976948',
+    },
+    featured: true,
+  },
+  {
+    title: 'Narwhal',
+    subtitle: 'AI-Native Operations Platform',
+    role: 'Contributor @ Datapad',
+    description: 'AI operations platform that makes B2B teams AI-native in weeks. Human and AI agents work from one shared customer graph across email, CRM, Slack, WhatsApp, and voice — running real operations end-to-end with approvals, runs, and ROI tracking.',
+    features: [
+      'Durable workflow runtime over a unified business graph',
+      'Multi-channel agents (Slack, email, voice, WhatsApp) with 3,000+ connectors',
+      'Per-workspace agent sandboxes; multi-model routing (Anthropic, OpenAI, Google, xAI)',
+    ],
+    tech: ['Next.js 16', 'React 19', 'TypeScript', 'AI SDK', 'Drizzle', 'Neon', 'Redis', 'Fly.io'],
+    links: {
+      live: 'https://getnarwhal.ai',
+    },
+    featured: true,
+  },
+  {
     title: 'Datapad',
     subtitle: 'AI-Powered Analytics Platform',
-    role: 'Software Developer @ Datapad',
+    role: 'Contributor @ Datapad',
     description: 'Full-stack analytics platform with AI chatbot for data Q&A. Built text-to-SQL and text-to-Mongo capabilities, multi-agent workflows, and dashboard/report generation.',
     features: [
       'AI agents (data analyst, web researcher, report generator)',
@@ -22,22 +70,24 @@ const projects = [
   },
   {
     title: 'Echo',
-    subtitle: 'E-commerce AI Chatbot',
-    role: 'Built end-to-end @ Datapad',
-    description: 'Intelligent shopping assistant chatbot that provides product recommendations, visual search, and customer support. Embeddable widget for e-commerce sites.',
+    subtitle: 'E-commerce AI Agent',
+    role: 'Contributor @ Datapad',
+    description: 'AI shopping assistant for e-commerce — product recommendations, visual search, and support via an embeddable widget. Built agent workflows on an Agent SDK with tool-calling and prompt-layer guardrails to run customer workflows reliably end-to-end.',
     features: [
-      'Multi-tenant architecture',
-      'Product recommendation engine with semantic search',
-      'AI-powered image analysis',
+      'Agent workflows on an Agent SDK with custom tools',
+      'Tenant knowledge retrieval with vector embeddings (RAG)',
+      'Multi-tenant ingestion via Inngest with retries & idempotency',
     ],
-    tech: ['Next.js 15', 'React 19', 'AI SDK', 'Drizzle ORM', 'PostgreSQL', 'Redis', 'Inngest'],
-    links: {},
+    tech: ['Next.js 15', 'React 19', 'AI SDK', 'Agent SDK', 'Neon', 'Drizzle', 'Inngest', 'Redis'],
+    links: {
+      live: 'https://get-echo.ai',
+    },
     featured: true,
   },
   {
     title: 'Stock AI',
     subtitle: 'iOS App - Trends & Analysis',
-    role: 'Contribution @ Datapad',
+    role: 'Contributor @ Datapad',
     description: 'iOS mobile app that analyzes stock charts and provides AI-assisted technical analysis explanations and scenarios.',
     features: [
       'AI-powered chart analysis',
@@ -53,7 +103,7 @@ const projects = [
   {
     title: 'Backsmith.ai',
     subtitle: 'AI Content Automation',
-    role: 'Contribution',
+    role: 'Contributor @ Datapad',
     description: 'AI-driven SEO and content automation platform with keyword research, competitor tracking, and automated article creation.',
     features: [
       'AI-powered keyword research',

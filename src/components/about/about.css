@@ -148,10 +148,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .about_card:last-child {
+  .about_cards > :last-child {
     grid-column: span 2;
-    max-width: 200px;
-    margin: 0 auto;
+    justify-self: center;
+    width: 200px;
   }
 
   .about_traits {

@@ -1,11 +1,12 @@
 import React from 'react'
 import './skills.css'
-import { 
-  FaNodeJs, FaPython, FaReact, FaDocker, FaGitAlt, FaSlack 
+import {
+  FaNodeJs, FaPython, FaReact, FaDocker, FaGitAlt, FaSlack, FaJava
 } from 'react-icons/fa'
-import { 
-  SiTypescript, SiFastapi, SiNextdotjs, SiMongodb, 
-  SiPostgresql, SiRedis, SiStripe, SiVercel, SiGooglecloud
+import {
+  SiTypescript, SiFastapi, SiNextdotjs, SiMongodb,
+  SiPostgresql, SiRedis, SiStripe, SiVercel, SiGooglecloud,
+  SiFlutter, SiJavascript
 } from 'react-icons/si'
 import { ScrollReveal } from '../animations'
 
@@ -16,7 +17,9 @@ const skillCategories = [
     skills: [
       { name: 'Node.js', icon: FaNodeJs },
       { name: 'TypeScript', icon: SiTypescript },
+      { name: 'JavaScript', icon: SiJavascript },
       { name: 'Python', icon: FaPython },
+      { name: 'Java', icon: FaJava },
       { name: 'FastAPI', icon: SiFastapi },
       { name: 'REST APIs', icon: null },
       { name: 'OAuth/JWT', icon: null },
@@ -29,6 +32,7 @@ const skillCategories = [
       { name: 'Next.js', icon: SiNextdotjs },
       { name: 'React', icon: FaReact },
       { name: 'React Native', icon: FaReact },
+      { name: 'Flutter', icon: SiFlutter },
       { name: 'HTML/CSS', icon: null },
       { name: 'Tailwind', icon: null },
     ]
@@ -50,6 +54,8 @@ const skillCategories = [
       { name: 'LangGraph', icon: null },
       { name: 'AI SDK', icon: null },
       { name: 'OpenAI', icon: null },
+      { name: 'Langfuse', icon: null },
+      { name: 'Claude Code', icon: null },
     ]
   },
   {
@@ -68,6 +74,7 @@ const skillCategories = [
       { name: 'Google Cloud', icon: SiGooglecloud },
       { name: 'Vercel', icon: SiVercel },
       { name: 'Railway', icon: null },
+      { name: 'VM', icon: null },
       { name: 'Docker', icon: FaDocker },
       { name: 'Git', icon: FaGitAlt },
     ]
