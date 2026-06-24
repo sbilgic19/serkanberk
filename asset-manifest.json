@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/serkanberk/static/css/main.91e251d7.css",
-    "main.js": "/serkanberk/static/js/main.144a77a2.js",
+    "main.css": "/serkanberk/static/css/main.8657a00a.css",
+    "main.js": "/serkanberk/static/js/main.eb4d0990.js",
     "static/media/me-about-new.jpeg": "/serkanberk/static/media/me-about-new.9288f1388ad5c75112c6.jpeg",
     "static/media/me-new.png": "/serkanberk/static/media/me-new.068d73b6e77b881b7f52.png",
-    "static/media/cv.pdf": "/serkanberk/static/media/cv.4bd00da6afb85f28c371.pdf",
+    "static/media/cv.pdf": "/serkanberk/static/media/cv.630534b817c187dbddae.pdf",
     "index.html": "/serkanberk/index.html",
-    "main.91e251d7.css.map": "/serkanberk/static/css/main.91e251d7.css.map",
-    "main.144a77a2.js.map": "/serkanberk/static/js/main.144a77a2.js.map"
+    "main.8657a00a.css.map": "/serkanberk/static/css/main.8657a00a.css.map",
+    "main.eb4d0990.js.map": "/serkanberk/static/js/main.eb4d0990.js.map"
   },
   "entrypoints": [
-    "static/css/main.91e251d7.css",
-    "static/js/main.144a77a2.js"
+    "static/css/main.8657a00a.css",
+    "static/js/main.eb4d0990.js"
   ]
 }
